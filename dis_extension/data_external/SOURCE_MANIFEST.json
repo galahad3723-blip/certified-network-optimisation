@@ -1,0 +1,78 @@
+{
+  "repository": "mroughan/InternetTopologyZoo",
+  "commit": "51118849b99534f01010d885d66321433a7eef9e",
+  "license": "CC BY 4.0",
+  "license_file": "../../data/InternetTopologyZoo/LICENSE",
+  "retrieved": "2026-10-23",
+  "files": [
+    {
+      "name": "Dfn",
+      "git_blob_sha1": "f486dca6b36fc448ed457d4c9124d79b4167cff2",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Dfn.graphml",
+      "sha256": "dbc464a458407bd631c05c4827f3ab44e25e3db16a1998d8822d0a6deef1630d",
+      "preprocessing": {
+        "name": "Dfn",
+        "raw_nodes": 58,
+        "raw_edges": 87,
+        "used_nodes": 58,
+        "simple_undirected_edges": 87,
+        "components": 1,
+        "self_loops_removed": 0,
+        "removed_nodes": 0,
+        "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+      }
+    },
+    {
+      "name": "Garr201201",
+      "git_blob_sha1": "9d6bc6036f9c47f25b0d6dbc0444dd548fc2d87d",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Garr201201.graphml",
+      "sha256": "f5188bcd8285c787108a22f21fdd9fe919954a6e9e141949e43eb6cc2afbb99b",
+      "preprocessing": {
+        "name": "Garr201201",
+        "raw_nodes": 61,
+        "raw_edges": 89,
+        "used_nodes": 61,
+        "simple_undirected_edges": 75,
+        "components": 1,
+        "self_loops_removed": 0,
+        "removed_nodes": 0,
+        "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+      }
+    },
+    {
+      "name": "Surfnet",
+      "git_blob_sha1": "c0a48d4170231d81579e537424fc062d33807f6a",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Surfnet.graphml",
+      "sha256": "b14dffb47ea02d3f029329cc65fd3e410da50c5e83b8a004b3b487a28b5bd362",
+      "preprocessing": {
+        "name": "Surfnet",
+        "raw_nodes": 50,
+        "raw_edges": 73,
+        "used_nodes": 50,
+        "simple_undirected_edges": 68,
+        "components": 1,
+        "self_loops_removed": 0,
+        "removed_nodes": 0,
+        "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+      }
+    },
+    {
+      "name": "BtEurope",
+      "git_blob_sha1": "d826be6ce20bf210213e10c62c7a107f75185b14",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/BtEurope.graphml",
+      "sha256": "7cba0b6a9e5ec67f1dfe41e18951a81812f3cf02a211876c6a42267086fd8fd5",
+      "preprocessing": {
+        "name": "BtEurope",
+        "raw_nodes": 24,
+        "raw_edges": 37,
+        "used_nodes": 24,
+        "simple_undirected_edges": 37,
+        "components": 1,
+        "self_loops_removed": 0,
+        "removed_nodes": 0,
+        "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+      }
+    }
+  ],
+  "scope": "Previously unused public graph structures from the same collection. Routes, capacities, weights and shocks will be synthetic. Files are not production traces or independent random network samples."
+}
