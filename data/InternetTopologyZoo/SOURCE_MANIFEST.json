@@ -1,0 +1,57 @@
+{
+  "repository": "mroughan/InternetTopologyZoo",
+  "commit": "51118849b99534f01010d885d66321433a7eef9e",
+  "license": "CC BY 4.0",
+  "retrieved": "2026-10-22",
+  "files": [
+    {
+      "name": "Abilene",
+      "nodes": 11,
+      "edges": 14,
+      "sha256": "8cd694280d98b336bb9b51fc3b2129a514f1b1b1ac80f2022aca02a57ef1e371",
+      "git_blob_sha1": "330c97a349a80a8f3e1c825072e45ca503d0eab7",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Abilene.graphml"
+    },
+    {
+      "name": "Cernet",
+      "nodes": 41,
+      "edges": 59,
+      "sha256": "7cc1f09b8887604641c2ce5b1f54a16faf1fe64928b76e0ff95ed99564c327a0",
+      "git_blob_sha1": "76efd4204d75b5c47a028d76c65906601a535c64",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Cernet.graphml"
+    },
+    {
+      "name": "Cogentco",
+      "nodes": 197,
+      "edges": 245,
+      "sha256": "fca525c7484c1044feb09add79fec0861d4b234622e5d07b7d202470ad0a09ca",
+      "git_blob_sha1": "d6054a3304788ad325933c6b84084433e4bf770c",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Cogentco.graphml"
+    },
+    {
+      "name": "Colt",
+      "nodes": 153,
+      "edges": 191,
+      "sha256": "e20cd0f5ecf0279d3308b90fa6749c41563d8463e45ba13f19460289f94946c5",
+      "git_blob_sha1": "b573e2d36f48abe8848c0e4144451578488a5773",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Colt.graphml"
+    },
+    {
+      "name": "Geant2012",
+      "nodes": 40,
+      "edges": 61,
+      "sha256": "8487b2fb091d53f1317035162df0d8ef436c9e1d10727e26865b0ecd89d4786e",
+      "git_blob_sha1": "a61eb6798dae90a000ed2f64a43241a075b05ed3",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/Geant2012.graphml"
+    },
+    {
+      "name": "UsCarrier",
+      "nodes": 158,
+      "edges": 189,
+      "sha256": "8fbb72f0ee93a08f062a8be1844c393e232ca4e59185254694651a026b2254ee",
+      "git_blob_sha1": "af07aa323927941bc7e21af48a7234a7e6cc8bd9",
+      "source_url": "https://github.com/mroughan/InternetTopologyZoo/blob/51118849b99534f01010d885d66321433a7eef9e/graphml/UsCarrier.graphml"
+    }
+  ],
+  "note": "Only graph structures are used. Capacities, sessions and capacity changes in this study are synthetic."
+}
