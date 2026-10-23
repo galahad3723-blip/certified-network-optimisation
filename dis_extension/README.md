@@ -10,8 +10,6 @@ certificates determine acceptance; predictions never certify a solution.
 Run from this directory with Python 3.12, the parent project's numerical
 dependencies, scikit-learn 1.8.0 and threadpoolctl 3.6.0. Numerical-library
 thread limits are set before NumPy imports and asserted during measurements.
-The final Word report additionally uses Pandoc for native equation conversion;
-PDF export requires a Word-compatible renderer such as LibreOffice.
 
 The supplied result files are measured observations. Preserve them in another
 directory before a complete rerun. Scripts intentionally reject accidental
@@ -25,7 +23,6 @@ overwriting of action timings, fitted fold models and replay timings.
     python experiment.py replay
     python analyse_extension.py
     python audit_extension.py
-    python build_report.py
 
 ## Frozen policy follow up
 
@@ -39,7 +36,6 @@ cross-hardware replication. The primary comparator is the simple capacity rule.
     python transfer_study.py replay
     python transfer_study.py analyse
     python transfer_study.py audit
-    python build_report.py
 
 Its supplied observations are under `transfer_results`, with a frozen protocol,
 model snapshot, source hashes, all 9,216 timings and first-repetition primal/dual
@@ -86,9 +82,6 @@ measure execution variation and are reduced to one median per case.
 - `train_policy.py`: nested group validation and fitted JSON policy records.
 - `analyse_extension.py`: paired summaries, topology-block intervals and figures.
 - `audit_extension.py`: saved-state, source-identity and split checks.
-- `THEORY.md`: correctness invariants and exact special case.
-- `RESEARCH_GUIDE_ZH.md`: Chinese interpretation, measured findings and
-  relation to scientific data analysis.
 - `results/protocol.json`: specifications fixed before the reported collection.
 - `results/action_runs.csv`: historical measured action costs.
 - `results/features.csv`: online-accessible descriptors, identified by case.
@@ -117,6 +110,4 @@ first-in-literature priority, production readiness or journal suitability.
 Primary methodological sources include Bischl et al., *ASlib: A Benchmark
 Library for Algorithm Selection*, arXiv:1506.02465v3; the scikit-learn 1.8
 cross-validation and common-pitfalls documentation; and the primary NUM sources
-listed in the parent manuscript. Cambridge's official MPhil in Data Intensive
-Science description motivates the emphasis on statistical evaluation,
-research software and reproducibility; no admissions outcome is inferred.
+listed in the parent manuscript. 
