@@ -1,0 +1,73 @@
+{
+  "frozen_utc": "2026-10-22T23:20:43Z",
+  "chronology": "The earlier 768-case study, including its unfavourable learner-to-rule comparison, motivated this follow-up. These four graphs were chosen by identity and size without inspecting their new action outcomes. The previously exported all-core deployment model is frozen; no retraining or threshold selection uses new data.",
+  "question": "Does the frozen learned selector add net computational value over the simple capacity rule on previously unused graphs and a different BLAS thread setting?",
+  "graphs": [
+    "Dfn",
+    "Garr201201",
+    "Surfnet",
+    "BtEurope"
+  ],
+  "route_seeds": [
+    1701,
+    1907
+  ],
+  "sizes": [
+    1000,
+    10000
+  ],
+  "capacity_families": [
+    "load_coupled",
+    "independent"
+  ],
+  "utility_shifts": [
+    0.0,
+    0.5
+  ],
+  "anchors": 64,
+  "cases": 256,
+  "shocks": [
+    "uniform_10",
+    "local_30",
+    "heterogeneous_30",
+    "mixed_recovery"
+  ],
+  "repeats": 3,
+  "methods": [
+    "ray_warm",
+    "ray_reuse",
+    "always_refine",
+    "heuristic",
+    "train_best",
+    "learned"
+  ],
+  "blas_thread_settings": [
+    1,
+    4
+  ],
+  "timing_records": 9216,
+  "target": 0.001,
+  "reference_target": 1e-07,
+  "workload": "Same lognormal mean-one weights and two nominal-capacity laws as the earlier study; all nominal arrays and routes freshly generated. Local shocks reduce ceil(5% of used links) by 30%; heterogeneous factors uniform in [0.7,1]; recovery factors uniform in [0.8,1.2].",
+  "primary_comparison": "Frozen learner versus capacity rule; report paired median and sum-of-case-medians ratios, failures and common-success subset separately for each thread setting.",
+  "secondary_comparisons": "All six pipelines relative to the capacity rule, and learner-to-rule by graph and size. No population confidence claim from four convenience-selected graph structures.",
+  "diagnostic": "Hindsight best-of-two action times and the possible extra-overhead budget relative to the measured capacity rule. Uses test timings only for diagnosis, never for online selection. It is an optimistic observed comparator, not a deployable policy or an expected-runtime lower-bound theorem.",
+  "measurement": "One machine. Configurations 1 and 4 alternate in order across cases; all loaded BLAS pools are verified at the requested limit. Within each configuration methods rotate across three repeats. Context switching and data loading are outside online timers; features, prediction, update, certificates and fallback are charged. Same nominal cache for every pipeline.",
+  "independence": "No graph identity, nominal anchor or route matrix overlaps the six training graph identities. The four additional structures still come from the same Topology Zoo collection, may share geographical context, and are not independent random draws or measured production traffic. Thread settings are not different hardware.",
+  "failure_handling": "All numerical outcomes and iteration-cap failures retained. Reference misses retained and disclosed. No output accepted without its actual certificate.",
+  "policy_snapshot_sha256": "9b1eb56513cbf097fd88548d892f7cd717464f577361bc33edf56dbcceb134ea",
+  "source_sha256": {
+    "transfer_study.py": "2d831750d909e5ea90437b1ebcecfdf62eb77f0592543f9f5cbdcb2aa41d342b",
+    "certified_updates.py": "57d3e0a33bcac8807d70e752dbbaaac72b56939824925910216672f329a33905",
+    "experiment.py": "2db175ab2b7756e8c5ef733fff89cfc424c2eb978e3e2fa6fd869dd6178b8c33",
+    "../certified_num.py": "fd6a3a0e6610fb380666f5653732d9a3e0d3b9166ac1e82621b274b1755a30af",
+    "results/deployment_model.json": "139588dc0ada7c813962c39192d3375d581966fdc5489010228c24b295362f83",
+    "results/action_runs.csv": "db5eccb2a987bbdc6bad3b06a11880d17b8d241e0a9d7b06f472e575e0edd520",
+    "results/features.csv": "7a5005d551568ed8d94e3de7ec2a781e6af34cda2918c2def31aef7ac6713049",
+    "data_external/SOURCE_MANIFEST.json": "32a77002f47d2a6316fa00f36bb596dec7d2cdb8a3034f1d49d1ff699b1daae6",
+    "data_external/Dfn.graphml": "dbc464a458407bd631c05c4827f3ab44e25e3db16a1998d8822d0a6deef1630d",
+    "data_external/Garr201201.graphml": "f5188bcd8285c787108a22f21fdd9fe919954a6e9e141949e43eb6cc2afbb99b",
+    "data_external/Surfnet.graphml": "b14dffb47ea02d3f029329cc65fd3e410da50c5e83b8a004b3b487a28b5bd362",
+    "data_external/BtEurope.graphml": "7cba0b6a9e5ec67f1dfe41e18951a81812f3cf02a211876c6a42267086fd8fd5"
+  }
+}

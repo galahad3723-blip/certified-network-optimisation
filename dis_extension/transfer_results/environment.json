@@ -1,0 +1,75 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "cpu_count": 9,
+  "available_affinity": 9,
+  "cgroup_cpu_max": "800000 100000",
+  "blas_pools_by_setting": {
+    "1": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      }
+    ],
+    "4": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      }
+    ]
+  },
+  "replay_seconds": 283.48344746100065,
+  "cases": 256,
+  "timing_records": 9216,
+  "policy_snapshot_sha256": "9b1eb56513cbf097fd88548d892f7cd717464f577361bc33edf56dbcceb134ea",
+  "source_sha256": {
+    "transfer_study.py": "2d831750d909e5ea90437b1ebcecfdf62eb77f0592543f9f5cbdcb2aa41d342b",
+    "certified_updates.py": "57d3e0a33bcac8807d70e752dbbaaac72b56939824925910216672f329a33905",
+    "experiment.py": "2db175ab2b7756e8c5ef733fff89cfc424c2eb978e3e2fa6fd869dd6178b8c33",
+    "../certified_num.py": "fd6a3a0e6610fb380666f5653732d9a3e0d3b9166ac1e82621b274b1755a30af",
+    "results/deployment_model.json": "139588dc0ada7c813962c39192d3375d581966fdc5489010228c24b295362f83",
+    "results/action_runs.csv": "db5eccb2a987bbdc6bad3b06a11880d17b8d241e0a9d7b06f472e575e0edd520",
+    "results/features.csv": "7a5005d551568ed8d94e3de7ec2a781e6af34cda2918c2def31aef7ac6713049",
+    "data_external/SOURCE_MANIFEST.json": "32a77002f47d2a6316fa00f36bb596dec7d2cdb8a3034f1d49d1ff699b1daae6",
+    "data_external/Dfn.graphml": "dbc464a458407bd631c05c4827f3ab44e25e3db16a1998d8822d0a6deef1630d",
+    "data_external/Garr201201.graphml": "f5188bcd8285c787108a22f21fdd9fe919954a6e9e141949e43eb6cc2afbb99b",
+    "data_external/Surfnet.graphml": "b14dffb47ea02d3f029329cc65fd3e410da50c5e83b8a004b3b487a28b5bd362",
+    "data_external/BtEurope.graphml": "7cba0b6a9e5ec67f1dfe41e18951a81812f3cf02a211876c6a42267086fd8fd5"
+  },
+  "scope": "Same CPU and software; two thread configurations. This is not cross-hardware replication."
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "cases": 256,
+  "timing_records": 9216,
+  "stored_states_recomputed": 3072,
+  "policy_decisions_recomputed": 512,
+  "maximum_saved_gap_error": 9.996344030316351e-17,
+  "maximum_overload": 0.0,
+  "failed_runs": 0,
+  "nominal_reference_misses": 0,
+  "updated_reference_misses": 0,
+  "training_and_test_graph_identities_disjoint": true,
+  "frozen_model_unchanged": true,
+  "source_hashes_match": true,
+  "blas_limits_verified": true,
+  "scope": "Float64 numerical consistency and graph-identity separation, not interval arithmetic or statistical independence of network populations."
+}

@@ -1,0 +1,533 @@
+{
+  "cases": 256,
+  "anchors": 64,
+  "graphs": [
+    "Dfn",
+    "Garr201201",
+    "Surfnet",
+    "BtEurope"
+  ],
+  "timing_records": 9216,
+  "by_setting": {
+    "1": {
+      "methods": {
+        "always_refine": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 192,
+          "total_seconds": 6.216112439987217,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0034684853441214,
+            "total_time_ratio": 0.9953693480484432,
+            "p10_ratio": 0.9155447659447875,
+            "p90_ratio": 1.1007361618883498,
+            "win_fraction": 0.46484375
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.98189111061266,
+            "total_time_ratio": 0.7359590436774357,
+            "p10_ratio": 0.5918357289311349,
+            "p90_ratio": 1.2853678145206593,
+            "win_fraction": 0.54296875
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0034684853441214,
+            "total_time_ratio": 0.9953693480484432,
+            "p10_ratio": 0.9155447659447875,
+            "p90_ratio": 1.1007361618883498,
+            "win_fraction": 0.46484375
+          }
+        },
+        "heuristic": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 192,
+          "total_seconds": 6.245031004998044,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0,
+            "total_time_ratio": 1.0,
+            "p10_ratio": 1.0,
+            "p90_ratio": 1.0,
+            "win_fraction": 0.0
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9845289598497806,
+            "total_time_ratio": 0.7393828683999395,
+            "p10_ratio": 0.6128267888561192,
+            "p90_ratio": 1.2371578586845928,
+            "win_fraction": 0.55078125
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0,
+            "total_time_ratio": 1.0,
+            "p10_ratio": 1.0,
+            "p90_ratio": 1.0,
+            "win_fraction": 0.0
+          }
+        },
+        "learned": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 91,
+          "total_seconds": 6.917930671001147,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0002464317379123,
+            "total_time_ratio": 1.107749611725637,
+            "p10_ratio": 0.8176518649294666,
+            "p90_ratio": 1.199229761484843,
+            "win_fraction": 0.49609375
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9846009644893302,
+            "total_time_ratio": 0.8190510853866206,
+            "p10_ratio": 0.6833547872466247,
+            "p90_ratio": 1.1475411578617685,
+            "win_fraction": 0.55078125
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0002464317379123,
+            "total_time_ratio": 1.107749611725637,
+            "p10_ratio": 0.8176518649294666,
+            "p90_ratio": 1.199229761484843,
+            "win_fraction": 0.49609375
+          }
+        },
+        "ray_reuse": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 0,
+          "total_seconds": 8.446274956995683,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0157173579279046,
+            "total_time_ratio": 1.3524792671543076,
+            "p10_ratio": 0.8083057623885948,
+            "p90_ratio": 1.6323396621067139,
+            "win_fraction": 0.44921875
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 1.0,
+            "total_time_ratio": 1.0,
+            "p10_ratio": 1.0,
+            "p90_ratio": 1.0,
+            "win_fraction": 0.0
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0157173579279046,
+            "total_time_ratio": 1.3524792671543076,
+            "p10_ratio": 0.8083057623885948,
+            "p90_ratio": 1.6323396621067139,
+            "win_fraction": 0.44921875
+          }
+        },
+        "ray_warm": {
+          "solved": 256,
+          "initial_certified": 0,
+          "light_certified": 0,
+          "refinement_choices": 0,
+          "total_seconds": 8.322905040993636,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.155620915613544,
+            "total_time_ratio": 1.332724374680065,
+            "p10_ratio": 0.7654785465478922,
+            "p90_ratio": 2.986393223897066,
+            "win_fraction": 0.3828125
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9933673831544375,
+            "total_time_ratio": 0.985393570937462,
+            "p10_ratio": 0.8964438321463524,
+            "p90_ratio": 2.9189552722185477,
+            "win_fraction": 0.546875
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.155620915613544,
+            "total_time_ratio": 1.332724374680065,
+            "p10_ratio": 0.7654785465478922,
+            "p90_ratio": 2.986393223897066,
+            "win_fraction": 0.3828125
+          }
+        },
+        "train_best": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 192,
+          "total_seconds": 6.156859169999722,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9945277633658851,
+            "total_time_ratio": 0.9858812814655754,
+            "p10_ratio": 0.9053107071967172,
+            "p90_ratio": 1.1014771199832856,
+            "win_fraction": 0.56640625
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9757409754945248,
+            "total_time_ratio": 0.7289437297918252,
+            "p10_ratio": 0.6090704572358641,
+            "p90_ratio": 1.270744943006573,
+            "win_fraction": 0.55859375
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9945277633658851,
+            "total_time_ratio": 0.9858812814655754,
+            "p10_ratio": 0.9053107071967172,
+            "p90_ratio": 1.1014771199832856,
+            "win_fraction": 0.56640625
+          }
+        }
+      },
+      "common_success_cases": 256,
+      "learner_vs_heuristic_by_topology": {
+        "BtEurope": {
+          "cases": 64,
+          "median_ratio": 1.0006958940808026,
+          "total_time_ratio": 1.14848022862496,
+          "p10_ratio": 0.8004992458884433,
+          "p90_ratio": 1.2052031947590862,
+          "win_fraction": 0.484375
+        },
+        "Dfn": {
+          "cases": 64,
+          "median_ratio": 0.9794413673556963,
+          "total_time_ratio": 1.131811148600416,
+          "p10_ratio": 0.8020079331452592,
+          "p90_ratio": 1.2181988315266838,
+          "win_fraction": 0.578125
+        },
+        "Garr201201": {
+          "cases": 64,
+          "median_ratio": 0.9994790026415408,
+          "total_time_ratio": 1.0936027635283008,
+          "p10_ratio": 0.8468045229642057,
+          "p90_ratio": 1.167585017754583,
+          "win_fraction": 0.5
+        },
+        "Surfnet": {
+          "cases": 64,
+          "median_ratio": 1.0182513219162308,
+          "total_time_ratio": 1.0907638333173277,
+          "p10_ratio": 0.8432339552063293,
+          "p90_ratio": 1.18781418459759,
+          "win_fraction": 0.421875
+        }
+      },
+      "learner_vs_heuristic_by_size": {
+        "1000": {
+          "cases": 128,
+          "median_ratio": 0.9833205203523563,
+          "total_time_ratio": 1.090339072136534,
+          "p10_ratio": 0.7901955241182294,
+          "p90_ratio": 1.1992776433610544,
+          "win_fraction": 0.5625
+        },
+        "10000": {
+          "cases": 128,
+          "median_ratio": 1.008654010091567,
+          "total_time_ratio": 1.1102832271477716,
+          "p10_ratio": 0.8965543380253442,
+          "p90_ratio": 1.1987198192482238,
+          "win_fraction": 0.4296875
+        }
+      },
+      "rejected_cases": 192,
+      "learner_rejected_vs_heuristic": {
+        "cases": 192,
+        "median_ratio": 1.0010249693861368,
+        "total_time_ratio": 1.1083358581554117,
+        "p10_ratio": 0.7952884580652446,
+        "p90_ratio": 1.2418717941643205,
+        "win_fraction": 0.4947916666666667
+      },
+      "median_gate_overhead_us": 100.0259999273112,
+      "median_hindsight_budget_us": 589.1780001547996,
+      "budget_covers_measured_gate_fraction": 0.6927083333333334,
+      "hindsight_action_disagreement_fraction": 0.4010416666666667,
+      "hindsight_best_total_vs_heuristic": 0.9571279335865047,
+      "diagnostic_scope": "Observed timing oracle and budget use held-out timings retrospectively. No deployment claim or guarantee of expected achievable speed."
+    },
+    "4": {
+      "methods": {
+        "always_refine": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 192,
+          "total_seconds": 6.763595555006748,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9965471935763396,
+            "total_time_ratio": 0.9944856876327735,
+            "p10_ratio": 0.894348346710676,
+            "p90_ratio": 1.0804199011906177,
+            "win_fraction": 0.5390625
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.967969238058392,
+            "total_time_ratio": 0.7340104093073601,
+            "p10_ratio": 0.6013713437063614,
+            "p90_ratio": 1.2807169451160336,
+            "win_fraction": 0.58984375
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9965471935763396,
+            "total_time_ratio": 0.9944856876327735,
+            "p10_ratio": 0.894348346710676,
+            "p90_ratio": 1.0804199011906177,
+            "win_fraction": 0.5390625
+          }
+        },
+        "heuristic": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 192,
+          "total_seconds": 6.801098938996789,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0,
+            "total_time_ratio": 1.0,
+            "p10_ratio": 1.0,
+            "p90_ratio": 1.0,
+            "win_fraction": 0.0
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9773006918561722,
+            "total_time_ratio": 0.7380804152692872,
+            "p10_ratio": 0.6109403303071133,
+            "p90_ratio": 1.2950966824168009,
+            "win_fraction": 0.546875
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0,
+            "total_time_ratio": 1.0,
+            "p10_ratio": 1.0,
+            "p90_ratio": 1.0,
+            "win_fraction": 0.0
+          }
+        },
+        "learned": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 91,
+          "total_seconds": 7.584398003003105,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9882498401948034,
+            "total_time_ratio": 1.115172425961187,
+            "p10_ratio": 0.8044219609313015,
+            "p90_ratio": 1.2440076478965416,
+            "win_fraction": 0.56640625
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9896189711970091,
+            "total_time_ratio": 0.8230869272502913,
+            "p10_ratio": 0.6520424720849525,
+            "p90_ratio": 1.128353730116931,
+            "win_fraction": 0.5234375
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9882498401948034,
+            "total_time_ratio": 1.115172425961187,
+            "p10_ratio": 0.8044219609313015,
+            "p90_ratio": 1.2440076478965416,
+            "win_fraction": 0.56640625
+          }
+        },
+        "ray_reuse": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 0,
+          "total_seconds": 9.214577162998454,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0232265344434555,
+            "total_time_ratio": 1.3548659188242407,
+            "p10_ratio": 0.7721442380032373,
+            "p90_ratio": 1.6368543551213097,
+            "win_fraction": 0.453125
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 1.0,
+            "total_time_ratio": 1.0,
+            "p10_ratio": 1.0,
+            "p90_ratio": 1.0,
+            "win_fraction": 0.0
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.0232265344434555,
+            "total_time_ratio": 1.3548659188242407,
+            "p10_ratio": 0.7721442380032373,
+            "p90_ratio": 1.6368543551213097,
+            "win_fraction": 0.453125
+          }
+        },
+        "ray_warm": {
+          "solved": 256,
+          "initial_certified": 0,
+          "light_certified": 0,
+          "refinement_choices": 0,
+          "total_seconds": 9.204682000999117,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.1613076110218579,
+            "total_time_ratio": 1.3534109830722258,
+            "p10_ratio": 0.7550773910802286,
+            "p90_ratio": 2.750827482460265,
+            "win_fraction": 0.3984375
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9867853702624089,
+            "total_time_ratio": 0.9989261404159627,
+            "p10_ratio": 0.8839422629915397,
+            "p90_ratio": 2.383099801569408,
+            "win_fraction": 0.53125
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 1.1613076110218579,
+            "total_time_ratio": 1.3534109830722258,
+            "p10_ratio": 0.7550773910802286,
+            "p90_ratio": 2.750827482460265,
+            "win_fraction": 0.3984375
+          }
+        },
+        "train_best": {
+          "solved": 256,
+          "initial_certified": 64,
+          "light_certified": 0,
+          "refinement_choices": 192,
+          "total_seconds": 6.930046589992331,
+          "vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9900209234850952,
+            "total_time_ratio": 1.0189598257799442,
+            "p10_ratio": 0.8844249639935815,
+            "p90_ratio": 1.0828548234775872,
+            "win_fraction": 0.609375
+          },
+          "vs_reuse": {
+            "cases": 256,
+            "median_ratio": 0.9593949218465314,
+            "total_time_ratio": 0.7520742913543818,
+            "p10_ratio": 0.6140092590213091,
+            "p90_ratio": 1.2275378230290437,
+            "win_fraction": 0.59765625
+          },
+          "common_success_vs_heuristic": {
+            "cases": 256,
+            "median_ratio": 0.9900209234850952,
+            "total_time_ratio": 1.0189598257799442,
+            "p10_ratio": 0.8844249639935815,
+            "p90_ratio": 1.0828548234775872,
+            "win_fraction": 0.609375
+          }
+        }
+      },
+      "common_success_cases": 256,
+      "learner_vs_heuristic_by_topology": {
+        "BtEurope": {
+          "cases": 64,
+          "median_ratio": 0.9880234143070021,
+          "total_time_ratio": 1.1615017653017568,
+          "p10_ratio": 0.820047387034128,
+          "p90_ratio": 1.3179043185516781,
+          "win_fraction": 0.5625
+        },
+        "Dfn": {
+          "cases": 64,
+          "median_ratio": 0.9839392104536386,
+          "total_time_ratio": 1.1759252438843428,
+          "p10_ratio": 0.7591777144082332,
+          "p90_ratio": 1.2602517237558977,
+          "win_fraction": 0.59375
+        },
+        "Garr201201": {
+          "cases": 64,
+          "median_ratio": 0.9702430530171983,
+          "total_time_ratio": 1.0998184692745685,
+          "p10_ratio": 0.8251242749374633,
+          "p90_ratio": 1.1645968922682841,
+          "win_fraction": 0.703125
+        },
+        "Surfnet": {
+          "cases": 64,
+          "median_ratio": 1.010267816029399,
+          "total_time_ratio": 1.071686757843538,
+          "p10_ratio": 0.809041081016151,
+          "p90_ratio": 1.182322453087358,
+          "win_fraction": 0.40625
+        }
+      },
+      "learner_vs_heuristic_by_size": {
+        "1000": {
+          "cases": 128,
+          "median_ratio": 0.9763515891926634,
+          "total_time_ratio": 1.0987264929171974,
+          "p10_ratio": 0.7868497157743259,
+          "p90_ratio": 1.1926212275859462,
+          "win_fraction": 0.6328125
+        },
+        "10000": {
+          "cases": 128,
+          "median_ratio": 0.9991092267456781,
+          "total_time_ratio": 1.1176416187639886,
+          "p10_ratio": 0.8296593992436798,
+          "p90_ratio": 1.2819730051079659,
+          "win_fraction": 0.5
+        }
+      },
+      "rejected_cases": 192,
+      "learner_rejected_vs_heuristic": {
+        "cases": 192,
+        "median_ratio": 0.9942686084549719,
+        "total_time_ratio": 1.1159543419730813,
+        "p10_ratio": 0.8088652002991169,
+        "p90_ratio": 1.2793843554586464,
+        "win_fraction": 0.5260416666666666
+      },
+      "median_gate_overhead_us": 103.8270002027275,
+      "median_hindsight_budget_us": 773.4004993836005,
+      "budget_covers_measured_gate_fraction": 0.6875,
+      "hindsight_action_disagreement_fraction": 0.375,
+      "hindsight_best_total_vs_heuristic": 0.954526634331932,
+      "diagnostic_scope": "Observed timing oracle and budget use held-out timings retrospectively. No deployment claim or guarantee of expected achievable speed."
+    }
+  },
+  "failed_runs": 0,
+  "maximum_overload": 0.0,
+  "maximum_accepted_gap": 0.0009999910052585,
+  "scope": "Four additional convenience-selected historical structures from the same source collection. Same machine under one/four BLAS threads. Descriptive comparisons, with no random-population or independent-hardware inference."
+}
