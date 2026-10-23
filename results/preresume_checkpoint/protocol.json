@@ -1,0 +1,80 @@
+{
+  "core_topologies": [
+    "Abilene",
+    "Geant2012",
+    "Cernet",
+    "Colt",
+    "UsCarrier",
+    "Cogentco"
+  ],
+  "seeds": [
+    101,
+    211,
+    307
+  ],
+  "sizes": [
+    1000,
+    10000
+  ],
+  "capacity_families": [
+    "load_coupled",
+    "independent"
+  ],
+  "utility_shifts": [
+    0.0,
+    0.5
+  ],
+  "weights": "lognormal(0,0.5), normalised to mean one",
+  "shocks": [
+    "uniform_10",
+    "uniform_30",
+    "local_30",
+    "heterogeneous_30"
+  ],
+  "local_shock": "30% reduction of ceil(5% of used directed links), chosen before method evaluation",
+  "methods": [
+    "cold",
+    "warm",
+    "ray_warm",
+    "reuse"
+  ],
+  "timing_repeats": 3,
+  "target_gap_per_total_weight": 0.001,
+  "reference_target": 1e-07,
+  "precheck_tolerances": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "scaling_extension": {
+    "topologies": [
+      "Abilene",
+      "Cogentco"
+    ],
+    "seed": 911,
+    "sizes": [
+      1000,
+      10000,
+      100000
+    ],
+    "capacity_family": "independent",
+    "shifts": [
+      0.0,
+      0.5
+    ],
+    "shocks": [
+      "uniform_10",
+      "heterogeneous_30"
+    ]
+  },
+  "source": "fixed nominal anchors; no sequence tracking or production trace",
+  "data_use": "public topology structures; synthetic weights, capacities, routes and shocks",
+  "statistics_unit": "six topology families; seeds/settings/shocks retained inside resampled topology",
+  "timing_scope": "online method, including feasibility checks and certification; preparation separately recorded",
+  "warm_start": "same nominal prices and feasible nominal anchor available to methods",
+  "limits": {
+    "maxiter": 3000,
+    "maxfun": 45000
+  },
+  "selection": "all settings fixed before main benchmark execution; development smoke test uses Abilene, 100 flows, seed 7"
+}
