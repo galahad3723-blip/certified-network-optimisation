@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "pages": 10,
+  "date": "15 October 2026",
+  "appendices": 0,
+  "native_equation_blocks": 13,
+  "figures": 3,
+  "tables": 6,
+  "all_pages_visually_reviewed": true,
+  "reviewed_final_pages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "earlier_reviewed_pages_byte_identical": [
+    1,
+    2
+  ],
+  "footer_numbers_correct": true,
+  "all_text_inside_18_point_edges": true,
+  "no_assistance_declarations": true,
+  "source_results_unchanged": true,
+  "pdf_sha256_local_before_upload": "dfb0fcbf1663d79360b10793e5562d930e2c316aaac994321dceba4a5c6a4f5d",
+  "docx_sha256": "6ed143094fce044edd23cc2eab9b0d34dc5ef1837ad6ece624d6dfc339565d8c",
+  "page_png_sha256": {
+    "1": "c9e66255134328346a946870f36b4b092a05edfa057dd699d1d1339a2b32e0c4",
+    "2": "4dc3fd4991624180a051dc593b8be6c4683015d7e2996dc8e89ea03f5cf6054e",
+    "3": "9f61f7a6d175c56906a324eacb937650d1961af8c02c328605f027fb8c607205",
+    "4": "6cc1099050bccee604e0ae37b7edda396bf66cfcf2f788754a4862b7a3276a52",
+    "5": "66b32d6e4d4cd4e53909ea133ed01679f38ad53d194ce01f9c8a184da1bd5f7b",
+    "6": "ab1ae0b7a68cca6ab5e3eeb1c772a22f9f482f7a015efc1422257c3a9f53a92e",
+    "7": "1ac7380a7e5d1ea690ef04cf3fb1842b958141f589679455d683be34d90ff4c5",
+    "8": "4efdc6f316d019b3108c793bcdc3d38e873f3b90bdd074e023e2ec71aac7cde4",
+    "9": "e0ead6f799a948d769ff2219d80e3cb7f7c5cb1ab0e0aecf6979703a549675fc",
+    "10": "adf05f6ce263a4cd7b88bbbdbe6e37227221542048961f4c74ff206d6fc2d28e"
+  }
+}
