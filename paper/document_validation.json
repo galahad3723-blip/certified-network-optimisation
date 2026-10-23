@@ -1,6 +1,7 @@
 {
   "pages": 10,
-  "date_removed": true,
+  "displayed_date": false,
   "appendices": false,
-  "change": "Remove displayed manuscript date; numerical content unchanged"
+  "change": "Revise abstract for focus and clarity; body, equations and numerical results unchanged",
+  "abstract_word_count": 192
 }
