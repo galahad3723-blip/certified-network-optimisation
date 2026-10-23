@@ -2,12 +2,6 @@
 
 Kai Chi
 
-
-
-Kai Chi
-
-
-
 ## Abstract
 
 Reusing an earlier network allocation after link capacities change can avoid a full optimisation, provided its utility loss can be bounded. For weighted shifted-log utility under hard capacity constraints, this study constructs a computable utility-loss certificate by optimising a scalar multiplier of cached dual prices. A sharp Jensen bound characterises reuse under uniform contractions, while a two-link counterexample shows that this restricted price family can yield arbitrarily loose certificates even for optimal allocations. A bounded price correction and a cost-sensitive selector are then introduced to guide further computation, with acceptance still determined by the certificate. At a normalised utility-loss tolerance of 0.001, the initial test certifies 216 of 576 core updates without iterative optimisation, with runtime gains concentrated in uniform contractions. Topology-held-out evaluation and a frozen-policy test on four unseen graphs show no consistent advantage for learning over a simple capacity rule. On 256 fresh updates, the learned selector increases aggregate runtime by 10.8% and 11.5% under one and four BLAS threads on the same CPU. These results establish conditions and limitations for certified reuse and demonstrate the need to account for the full computational cost of learned selection on synthetic workloads.
