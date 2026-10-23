@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this research software or its saved numerical observations, cite this repository and the upstream topology dataset."
+title: "Certified Network Optimisation"
+type: software
+version: "0.1.0"
+date-released: "2026-10-23"
+authors:
+  - family-names: "Chi"
+    given-names: "Kai"
+repository-code: "https://github.com/galahad3723-blip/certified-network-optimisation"
