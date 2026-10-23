@@ -9,9 +9,9 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent
 RELEASE_URL = ('https://github.com/galahad3723-blip/certified-network-optimisation/'
-               'releases/download/v0.1.0/Certified_Network_Optimisation_Source_and_Data.zip')
-ARCHIVE_SHA256 = 'd9bb706e47f1c8ee990c937d78660e7ec09a428fa37cdcf8cab80dfd1a1543cc'
-PREFIX = 'Certified_NUM_Research/'
+               'releases/download/v1.0.0/Certified_Network_Optimisation_Data.zip')
+ARCHIVE_SHA256 = 'e558f2538b283e7283a78be81c3caeb133c58ca52930fec832830607cf42b99a'
+PREFIX = 'Certified_Network_Optimisation_Data/'
 OBSERVATIONS = ('results/', 'dis_extension/results/', 'dis_extension/transfer_results/')
 
 
@@ -81,7 +81,7 @@ def main():
     if archive is None:
         cache = ROOT / '.data-cache'
         cache.mkdir(exist_ok=True)
-        archive = cache / 'Certified_Network_Optimisation_Source_and_Data.zip'
+        archive = cache / 'Certified_Network_Optimisation_Data.zip'
         if not archive.exists():
             temporary = archive.with_suffix('.zip.part')
             request = urllib.request.Request(RELEASE_URL, headers={'User-Agent':'certified-network-optimisation'})

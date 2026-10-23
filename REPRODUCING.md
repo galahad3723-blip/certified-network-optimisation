@@ -1,34 +1,36 @@
-# Reproducing the numerical evidence
+# Reproducing the final study
 
-The PDF is the combined ten-page report. Historical notes and intermediate
-manuscripts inside the evidence archive predate that combined report.
+## Environment and data
 
-## Verify existing observations
-
-Run from the repository root with Python 3.12:
+Use Python 3.12 and install the pinned dependencies:
 
 ```bash
 python -m pip install -r requirements-learning.txt
 python download_data.py
+```
+
+For offline use:
+
+```bash
+python download_data.py --archive /path/to/Certified_Network_Optimisation_Data.zip
+```
+
+Add `--verify-only` to check the archive without installing it. The downloader verifies the archive digest, every manifest entry and the complete archive inventory. Existing different observations are rejected rather than overwritten.
+
+## Audit the recorded results
+
+```bash
 python audit_saved_results.py
 cd dis_extension
 python audit_extension.py
 python transfer_study.py audit
 ```
 
-For an offline archive:
-
-```bash
-python download_data.py --archive /path/to/Certified_Network_Optimisation_Source_and_Data.zip
-```
-
-`download_data.py --verify-only --archive ...` checks all archived files without
-installing observations. The release preserves the original 1,244-entry package,
-including its file manifest, raw timings, failures and saved numerical states.
+The checks recompute stored certificates, feasible allocations, data splits and policy decisions. They retain failures and verify source identities. Their scope is Float64 consistency, rather than interval arithmetic or independent external replication.
 
 ## Recompute summaries and figures
 
-After loading the observations:
+From the repository root:
 
 ```bash
 python analyse_benchmark.py
@@ -37,25 +39,14 @@ python analyse_extension.py
 python transfer_study.py analyse
 ```
 
-These commands analyse recorded observations rather than collect new timing
-samples. Runtime on a different machine will not reproduce identical timings.
+These analyse saved measurements. Timings cannot be reproduced identically on a different machine.
 
-## Collect new observations
+## Collect new measurements
 
-Use a separate copy of the repository and preserve the released observations.
-The original `run_benchmark.py` overwrites its output directory. The learning
-drivers reject accidental overwrite of fitted models and measured records.
-See `docs/Original_NUM_Reproduction.md` and `dis_extension/README.md` for full
-stage order. Learning stages use the unchanged original instance arrays.
+Use a separate checkout and keep the released data intact. `run_benchmark.py` writes to `results/`. The learning stage uses the original instance arrays; its stage order is documented in `dis_extension/README.md`. The transfer study provides `freeze`, `prepare`, `replay`, `analyse` and `audit` stages; run its `--help` for arguments.
 
-The original benchmark uses one configured BLAS thread. The follow-up tests
-one and four on the same CPU and asserts NumPy and SciPy thread-pool limits.
-Offline training, online feature computation and fallback have different
-accounting roles; the paper specifies what each runtime comparison charges.
+The recorded NUM experiment uses one BLAS thread. The new-graph validation compares one and four threads on the same CPU. Analysis reports full online costs, including features, prediction, correction, certificates and fallback.
 
-## Documents
+## Final manuscript
 
-The supplied paper can be read without the document toolchain. Historical
-manuscript builders require Pandoc, python-docx and a Word-compatible PDF
-renderer. They do not collect numerical measurements. The current combined
-paper and editable DOCX are under `paper/`; it has no appendices.
+The final ten-page manuscript is in `paper/`. PDF and Word contain the same abstract and numerical findings. Earlier standalone NUM and DIS manuscript builders are not part of this release. Execution checkpoints and interrupted runs are retained only as numerical evidence in the data archive; they are excluded from the reported comparisons as specified in the protocols.

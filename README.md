@@ -1,35 +1,24 @@
 # Certified Network Optimisation
 
-**Utility certificates and the computational value of algorithm selection.**
+Certified reuse and cost-sensitive algorithm selection for network utility maximisation.
 
-This personal research project studies repeated network utility maximisation
-after link capacities change. It combines a computable primal–dual utility-loss
-bound, inexpensive numerical updates, and a learned choice of update action.
-The numerical certificate determines acceptance; the policy only chooses how
-much computation to perform.
+**[Final paper](paper/Certified_Network_Optimisation.pdf)** · [Word version](paper/Certified_Network_Optimisation.docx) · [Reproduction instructions](REPRODUCING.md) · [Experiment data](https://github.com/galahad3723-blip/certified-network-optimisation/releases/tag/v1.0.0)
 
-**[Read the ten-page paper](paper/Certified_Network_Optimisation.pdf)** ·
-[Editable manuscript](paper/Certified_Network_Optimisation.docx) ·
-[Reproduction instructions](REPRODUCING.md)
+The study asks when a previous network allocation can be reused after link capacities change, and whether learning can reduce the cost of further updates. A computable primal–dual bound determines acceptance. The learned policy chooses whether to attempt a bounded price correction.
 
-## Main findings
+## Findings
 
-| Experiment | Saved observations | Main result |
-|---|---:|---|
-| Original NUM benchmark | 600 capacity cases; 7,200 timings | The precheck certifies 216/576 core updates. Median paired reuse/ray-warm time is 0.95 overall and 1.03 for nonuniform changes. |
-| Topology-held-out learning evaluation | 768 updates; 13,824 fresh timings | A learned selector does not consistently improve on an inexpensive capacity rule. |
-| Frozen policy on four unused graphs | 256 fresh updates; 9,216 timings | Learner/rule aggregate cost ratios are 1.108 and 1.115 under one and four configured BLAS threads on the same CPU. |
+| Evaluation | Result |
+|---|---|
+| Certified reuse | 216 of 576 core updates are accepted without iterative optimisation at a normalised utility-loss tolerance of 0.001. |
+| Nonuniform changes | The median paired runtime ratio to the strong ray warm start is 1.03. |
+| Frozen policy on four unseen graphs | Across 256 new updates, learned selection costs 10.8% and 11.5% more than the simple capacity rule under one and four BLAS threads on the same CPU. |
 
-All reported failures remain in the raw observations. The original scaling
-extension has 12 failed timing runs; the shifted learning replay has 18; the
-fresh-graph follow-up has none. The primary utility gap per total weight is
-0.001. Timing repetitions are execution observations, not independent networks.
+The final paper is ten pages, including references, with no appendices.
 
-![Frozen policy transfer](media/transfer_by_graph.png)
+## Reproduce
 
-## Reproduce the saved results
-
-Use Python 3.12. Install the recorded numerical and learning dependencies:
+Python 3.12 is recommended.
 
 ```bash
 python -m venv .venv
@@ -42,45 +31,25 @@ python audit_extension.py
 python transfer_study.py audit
 ```
 
-The data command downloads the complete source-and-data release asset, checks
-its SHA256 digest and its 1,243-entry file manifest, and installs the saved
-result arrays and observations. It leaves source files and the paper intact.
-An existing different result file causes it to stop instead of overwriting it.
-For offline use, download the release ZIP and pass its path with `--archive`.
+The data download is verified against a published SHA256 digest and an internal file manifest before installation. It contains the recorded arrays, timings, fitted-policy evidence, failures and execution records required by the audits. It contains no manuscript drafts or document-generation scripts.
 
-The Git repository holds the code, protocols, fitted policies, summary results,
-topology sources and current paper. Larger arrays and raw timing records are
-in the release asset
-[`Certified_Network_Optimisation_Source_and_Data.zip`](https://github.com/galahad3723-blip/certified-network-optimisation/releases/download/v0.1.0/Certified_Network_Optimisation_Source_and_Data.zip).
-The archive digest is
-`d9bb706e47f1c8ee990c937d78660e7ec09a428fa37cdcf8cab80dfd1a1543cc`.
+## Repository contents
 
-## Code map
+| Path | Contents |
+|---|---|
+| `paper/` | Final paper in PDF, Word and Markdown formats |
+| `certified_num.py` | Model, dual bounds, feasibility repair and shared solver |
+| `run_benchmark.py`, `analyse_benchmark.py` | Benchmark collection and analysis |
+| `audit_saved_results.py`, `validate_*.py` | Numerical consistency checks |
+| `dis_extension/` | Bounded correction, policy training, evaluation and transfer study |
+| `results/` | Benchmark protocols, final summaries and numerical checks |
+| `data/`, `dis_extension/data_external/` | Attributed public topology sources |
+| `media/` | Selected result figures |
 
-- `certified_num.py`: utility model, dual bounds, feasibility repair and shared solver.
-- `THEORY.md` and `FINITE_ANCHOR_EXTENSION.md`: analytical statements and proofs.
-- `run_benchmark.py`, `analyse_benchmark.py`: original benchmark and analysis.
-- `dis_extension/certified_updates.py`: bounded correction and portable policy inference.
-- `dis_extension/train_policy.py`: nested validation with complete topologies held out.
-- `dis_extension/experiment.py`: action collection and paired evaluation.
-- `dis_extension/transfer_study.py`: frozen-policy follow-up and stored-state audit.
-- `results/summary.json`, `dis_extension/results/summary.json`, and
-  `dis_extension/transfer_results/summary.json`: measured headline results.
+## Data and scope
 
-## Scope and data attribution
+Network structures are from Internet Topology Zoo. Routes, capacities, weights and shocks are generated, rather than production traffic measurements. Execution failures remain in the data. Timing repetitions measure execution variation; they are not independent networks. The thread comparison uses one CPU.
 
-Ten historical topology structures come from Internet Topology Zoo, pinned to
-commit `51118849b99534f01010d885d66321433a7eef9e`. Routes, weights, capacities
-and shocks are generated; they are not production traffic measurements.
-The follow-up compares two BLAS limits on one CPU, not different machines.
-The study does not establish state-of-the-art solver superiority or publication
-priority. See the paper for conditions on the analytical bounds and empirical
-interpretation.
+Upstream topology attribution and the CC BY 4.0 licence are retained in `data/InternetTopologyZoo/`. See [PROVENANCE.md](PROVENANCE.md) for data sources and execution-record details.
 
-Topology data retain their upstream CC BY 4.0 attribution and licence in
-`data/InternetTopologyZoo/LICENSE`; the four additional source files and hashes
-are under `dis_extension/data_external/`. Third-party data licences do not
-automatically license the original project code.
-
-Author: Kai Chi. The paper carries no date; repository release metadata records the actual public release date. Numerical execution records retain
-their original chronology and source hashes.
+Author: Kai Chi.
