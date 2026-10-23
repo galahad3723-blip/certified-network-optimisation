@@ -1,0 +1,99 @@
+{
+  "fixed_before_action_collection_utc": "2026-10-22T22:30:03Z",
+  "question": "Can a low-cost learned gate select a certified lightweight update across unseen topology families?",
+  "chronology": "The original 576 cases and their original-method outcomes were previously analysed. New action outcomes have not been inspected. This is a fixed extension protocol, not external preregistration.",
+  "execution_correction": "An initial collection was interrupted because NumPy BLAS had nine threads while SciPy BLAS had one. Partial observations and original sources are retained under excluded_initial_run and are excluded from all training and reported performance. The complete collection is repeated after an import-order correction and a single-thread assertion; action, feature and model specifications are unchanged.",
+  "development": "19 small checks independent of the core benchmark; two-link examples and random 40-flow networks",
+  "core_cases": 576,
+  "core_sizes": [
+    1000,
+    10000
+  ],
+  "target": 0.001,
+  "phase1_actions": [
+    "ray_reuse",
+    "always_refine"
+  ],
+  "repeats": 3,
+  "refinement": {
+    "predictor": "lambda0*c0/c; positive floor 1e-12",
+    "corrections": 2,
+    "coordinates": 8,
+    "backtracking_trials": 8,
+    "ridge": "1e-8 times maximum dual Hessian diagonal"
+  },
+  "features": [
+    "log_flows",
+    "log_links",
+    "route_length",
+    "shift_mean",
+    "shift_sd",
+    "ratio_min",
+    "ratio_mean",
+    "ratio_sd",
+    "ratio_max",
+    "changed_fraction",
+    "price_weighted_ratio",
+    "price_weighted_sd",
+    "active_price_fraction",
+    "log_gap",
+    "ray_scale",
+    "candidate_utility_gain"
+  ],
+  "forbidden_inputs": [
+    "updated reference allocations or prices",
+    "updated optimal values",
+    "test timings",
+    "topology name",
+    "case identity",
+    "shock label"
+  ],
+  "learning_target": "log(median refinement time / median reuse time) on cases rejected by the initial certificate",
+  "model_candidates": [
+    "ridge alpha 1",
+    "ridge alpha 10",
+    "tree depth 1",
+    "tree depth 2",
+    "tree depth 3"
+  ],
+  "tree_min_samples_leaf": 20,
+  "decision_thresholds": [
+    0.0,
+    -0.05
+  ],
+  "inner_score": "mean selected action cost relative to reuse, plus observed feature overhead; equal weight to each validation topology",
+  "outer_validation": "Leave one complete topology family out; all anchors, route matrices, sizes, shifts, seeds and shocks from that topology stay together",
+  "inner_validation": "Leave one of the remaining five topology families out for model and threshold selection",
+  "replay_methods": [
+    "ray_warm",
+    "ray_reuse",
+    "always_refine",
+    "heuristic",
+    "train_best",
+    "learned"
+  ],
+  "heuristic": "Refine if standard deviation of c/c0 exceeds 1e-4; otherwise reuse pipeline",
+  "train_best": "Best fixed action by training-topology mean time ratios, without test outcomes",
+  "shift_test": {
+    "anchors": "seed101, both sizes, capacity laws and shifts, across all six graph families",
+    "cases": 192,
+    "seed": 2026102307,
+    "shocks": [
+      "local_05",
+      "local_50",
+      "heterogeneous_60",
+      "mixed_recovery"
+    ],
+    "training": "Outer fold models from core observations only; no shift-test outcomes used"
+  },
+  "timing": "Fresh paired replay; all online feature extraction, policy prediction, certificate work, lightweight updates and fallback are timed. Data loading and offline training are separate. Actions rotate deterministically within repetitions.",
+  "statistics": "Per-case timing medians. Paired ratios and total time; topology-cluster bootstrap with six clusters, 10000 draws, seed20261023. Six convenience topologies do not support population-wide claims.",
+  "correctness": "Only an actual feasible-primal/dual certificate accepts a result. Learned predictions never certify quality. Float64 checks are not interval arithmetic.",
+  "sources": {
+    "certified_updates.py": "57d3e0a33bcac8807d70e752dbbaaac72b56939824925910216672f329a33905",
+    "experiment.py": "2db175ab2b7756e8c5ef733fff89cfc424c2eb978e3e2fa6fd869dd6178b8c33",
+    "certified_num.py": "fd6a3a0e6610fb380666f5653732d9a3e0d3b9166ac1e82621b274b1755a30af",
+    "cases.csv": "ded4fc48cb9ef73d06ec936cab7ec1a0c2d250eaffec516427f3ff894677760c",
+    "anchors.csv": "37b61f3e662e2b19191a641c4bb97d4d1d0803db2555159a12ef3904b496317d"
+  }
+}

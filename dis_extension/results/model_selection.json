@@ -1,0 +1,560 @@
+[
+  {
+    "held_out_topology": "Abilene",
+    "selected": {
+      "spec": {
+        "kind": "tree",
+        "depth": 2
+      },
+      "threshold": 0.0,
+      "score": 0.9408348845369572
+    },
+    "inner_candidates": [
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": 0.0,
+        "score": 0.9450811235371568
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": -0.05,
+        "score": 0.9415943792221055
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": 0.0,
+        "score": 0.9456724337677107
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": -0.05,
+        "score": 0.9415728956180874
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": 0.0,
+        "score": 0.9540086664366545
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": -0.05,
+        "score": 0.9540086664366545
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": 0.0,
+        "score": 0.9408348845369572
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": -0.05,
+        "score": 0.9408348845369572
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": 0.0,
+        "score": 0.9420614409465635
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": -0.05,
+        "score": 0.9436500383446065
+      }
+    ]
+  },
+  {
+    "held_out_topology": "Cernet",
+    "selected": {
+      "spec": {
+        "kind": "ridge",
+        "alpha": 10.0
+      },
+      "threshold": -0.05,
+      "score": 0.9350981633504116
+    },
+    "inner_candidates": [
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": 0.0,
+        "score": 0.9419193550468588
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": -0.05,
+        "score": 0.9364982217015045
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": 0.0,
+        "score": 0.9430847868177569
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": -0.05,
+        "score": 0.9350981633504116
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": 0.0,
+        "score": 0.9610381359651783
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": -0.05,
+        "score": 0.9610381359651783
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": 0.0,
+        "score": 0.9396994968968387
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": -0.05,
+        "score": 0.9396994968968387
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": 0.0,
+        "score": 0.9432992692135425
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": -0.05,
+        "score": 0.956322352475782
+      }
+    ]
+  },
+  {
+    "held_out_topology": "Cogentco",
+    "selected": {
+      "spec": {
+        "kind": "ridge",
+        "alpha": 10.0
+      },
+      "threshold": -0.05,
+      "score": 0.9369177591578574
+    },
+    "inner_candidates": [
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": 0.0,
+        "score": 0.938658542053086
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": -0.05,
+        "score": 0.9378957475547148
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": 0.0,
+        "score": 0.9392888933060608
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": -0.05,
+        "score": 0.9369177591578574
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": 0.0,
+        "score": 0.9640472277166896
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": -0.05,
+        "score": 0.9640472277166896
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": 0.0,
+        "score": 0.9423235941546378
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": -0.05,
+        "score": 0.9423235941546378
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": 0.0,
+        "score": 0.9441420819133457
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": -0.05,
+        "score": 0.9432363475527079
+      }
+    ]
+  },
+  {
+    "held_out_topology": "Colt",
+    "selected": {
+      "spec": {
+        "kind": "ridge",
+        "alpha": 1.0
+      },
+      "threshold": 0.0,
+      "score": 0.9312517225144881
+    },
+    "inner_candidates": [
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": 0.0,
+        "score": 0.9312517225144881
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": -0.05,
+        "score": 0.9342057253504571
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": 0.0,
+        "score": 0.9372875415629831
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": -0.05,
+        "score": 0.9343045436267194
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": 0.0,
+        "score": 0.9582957858966458
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": -0.05,
+        "score": 0.9582957858966458
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": 0.0,
+        "score": 0.9390650932105604
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": -0.05,
+        "score": 0.9390650932105604
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": 0.0,
+        "score": 0.940497881970489
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": -0.05,
+        "score": 0.9429504248725399
+      }
+    ]
+  },
+  {
+    "held_out_topology": "Geant2012",
+    "selected": {
+      "spec": {
+        "kind": "tree",
+        "depth": 2
+      },
+      "threshold": 0.0,
+      "score": 0.9374923291997378
+    },
+    "inner_candidates": [
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": 0.0,
+        "score": 0.9395440606481298
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": -0.05,
+        "score": 0.9416018923211519
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": 0.0,
+        "score": 0.9442976966966363
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": -0.05,
+        "score": 0.9414557131255906
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": 0.0,
+        "score": 0.964196025330085
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": -0.05,
+        "score": 0.964196025330085
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": 0.0,
+        "score": 0.9374923291997378
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": -0.05,
+        "score": 0.9374923291997378
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": 0.0,
+        "score": 0.9458804759901869
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": -0.05,
+        "score": 0.9544834049697183
+      }
+    ]
+  },
+  {
+    "held_out_topology": "UsCarrier",
+    "selected": {
+      "spec": {
+        "kind": "ridge",
+        "alpha": 1.0
+      },
+      "threshold": 0.0,
+      "score": 0.9295599370586205
+    },
+    "inner_candidates": [
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": 0.0,
+        "score": 0.9295599370586205
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "threshold": -0.05,
+        "score": 0.9331075728731978
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": 0.0,
+        "score": 0.9312911145785424
+      },
+      {
+        "spec": {
+          "kind": "ridge",
+          "alpha": 10.0
+        },
+        "threshold": -0.05,
+        "score": 0.9301419262977069
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": 0.0,
+        "score": 0.9583877008712687
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 1
+        },
+        "threshold": -0.05,
+        "score": 0.9583877008712687
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": 0.0,
+        "score": 0.930548087358661
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 2
+        },
+        "threshold": -0.05,
+        "score": 0.930548087358661
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": 0.0,
+        "score": 0.930548087358661
+      },
+      {
+        "spec": {
+          "kind": "tree",
+          "depth": 3
+        },
+        "threshold": -0.05,
+        "score": 0.9379180539832349
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "core_cases": 576,
+  "shift_cases": 192,
+  "action_runs": 3456,
+  "replay_runs": 13824,
+  "stored_action_states_recomputed": 1152,
+  "held_out_policy_choices_recomputed": 768,
+  "maximum_saved_gap_error": 9.974659986866641e-17,
+  "maximum_feature_recomputation_error": 1.7763568394002505e-15,
+  "maximum_overload": 0.0,
+  "failed_replay_runs": 18,
+  "all_outer_topologies_and_anchors_disjoint": true,
+  "threadpools_verified_one": true,
+  "source_hashes_match_reported_execution": true,
+  "scope": "Float64 consistency, saved-state and split checks; no interval arithmetic, external replication or population-wide statistical guarantee"
+}

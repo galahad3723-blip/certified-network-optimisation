@@ -1,0 +1,18 @@
+{
+  "docx": "/workspace/scratch/610725e3710d/sci_research/deliverables/DIS_Study.docx",
+  "equation_blocks": 6,
+  "appendix": [
+    {
+      "heading": "Appendix A Features and portable policy inference",
+      "lines": 27
+    },
+    {
+      "heading": "Appendix B Certified action and fallback",
+      "lines": 48
+    }
+  ],
+  "numbers_sources": [
+    "dis_extension/results/summary.json",
+    "dis_extension/transfer_results/summary.json"
+  ]
+}

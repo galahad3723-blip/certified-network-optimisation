@@ -1,0 +1,9 @@
+{
+  "event": "Transient control connection interruption during paired replay",
+  "same_replay_process_continued": true,
+  "replay_was_restarted": false,
+  "last_confirmed_records_before_interruption": 12384,
+  "confirmed_records_after_reconnection": 13104,
+  "observations_removed_or_replaced_for_this_event": 0,
+  "description": "The control connection became unavailable and then recovered. The original execution session remained active and produced later checkpoints. No replay method, numerical parameter or fitted policy was changed. All recorded timings remain in the reported dataset."
+}

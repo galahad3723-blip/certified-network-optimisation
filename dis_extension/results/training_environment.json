@@ -1,0 +1,27 @@
+{
+  "sklearn": "1.8.0",
+  "features": [
+    "log_flows",
+    "log_links",
+    "route_length",
+    "shift_mean",
+    "shift_sd",
+    "ratio_min",
+    "ratio_mean",
+    "ratio_sd",
+    "ratio_max",
+    "changed_fraction",
+    "price_weighted_ratio",
+    "price_weighted_sd",
+    "active_price_fraction",
+    "log_gap",
+    "ray_scale",
+    "candidate_utility_gain"
+  ],
+  "training_seconds": 0.763453256000048,
+  "outer_folds": 6,
+  "rows": 576,
+  "modelled_rejected_cases": 360,
+  "no_reference_or_test_timing_features": true,
+  "all_outer_training_and_test_topologies_disjoint": true
+}
