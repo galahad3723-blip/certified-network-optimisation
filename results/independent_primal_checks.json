@@ -1,0 +1,42 @@
+[
+  {
+    "topology": "Abilene",
+    "flows": 40,
+    "seed": 19,
+    "xi": 0.0,
+    "SLSQP_success": true,
+    "SLSQP_overload": 0.0,
+    "dual_vs_primal_gap_per_weight": 7.700506898800087e-14,
+    "dual_reference_gap": 9.525981248259543e-09
+  },
+  {
+    "topology": "Abilene",
+    "flows": 40,
+    "seed": 19,
+    "xi": 0.5,
+    "SLSQP_success": true,
+    "SLSQP_overload": 0.0,
+    "dual_vs_primal_gap_per_weight": 1.0804690475652025e-13,
+    "dual_reference_gap": 4.396347019763881e-09
+  },
+  {
+    "topology": "Cernet",
+    "flows": 40,
+    "seed": 19,
+    "xi": 0.0,
+    "SLSQP_success": true,
+    "SLSQP_overload": 1.2878587085651816e-14,
+    "dual_vs_primal_gap_per_weight": 2.3341328869719297e-13,
+    "dual_reference_gap": 9.517761112576296e-09
+  },
+  {
+    "topology": "Cernet",
+    "flows": 40,
+    "seed": 19,
+    "xi": 0.5,
+    "SLSQP_success": true,
+    "SLSQP_overload": 4.884981308350689e-15,
+    "dual_vs_primal_gap_per_weight": 3.47233353181764e-13,
+    "dual_reference_gap": 4.157632993440075e-09
+  }
+]

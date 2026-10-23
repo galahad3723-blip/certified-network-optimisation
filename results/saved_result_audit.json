@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "anchors": 156,
+  "capacity_cases_recomputed": 600,
+  "timing_records": 7200,
+  "source_hashes_match_executed_code": false,
+  "numerical_source_unchanged": true,
+  "source_identity": {
+    "certified_num.py": {
+      "mode": "documented_text_revision",
+      "executed_sha256": "ee9d48596ab8a43c5f872f05832d30e55b7218fcf621132d41440cc6091b35da",
+      "current_sha256": "fd6a3a0e6610fb380666f5653732d9a3e0d3b9166ac1e82621b274b1755a30af",
+      "numerical_ast_sha256": "f1dd0abeccafcdf9c2593e3be511065d33d3627c3a8625a9ccd98caad1d6065c",
+      "numerical_ast_unchanged": true
+    },
+    "run_benchmark.py": {
+      "mode": "documented_text_revision",
+      "executed_sha256": "b8cad1da3c09bc5c23e6ec8476b0dce0bfe834e0b7204a60a0aeed73dddcb1ae",
+      "current_sha256": "c2ae2f6b2f7828475ffa3bb8d9102f0bc24acb3fb71c9a663b8ee79f1ada2cf0",
+      "numerical_ast_sha256": "a1a5f87ff93212eec578bfab9c827110f6be96c58e17352954d73f9c661a48aa",
+      "numerical_ast_unchanged": true
+    }
+  },
+  "preresume_checkpoint_values_preserved_exactly": true,
+  "preresume_checkpoint_counts": {
+    "anchors": 154,
+    "cases": 596,
+    "runs": 7152
+  },
+  "maximum_reference_gap_recomputation_error": 2.6469779601696886e-23,
+  "maximum_reuse_gap_recomputation_error": 9.974659986866641e-17,
+  "maximum_anchor_overload": 3.1086244689504383e-15,
+  "maximum_reference_overload": 8.881784197001252e-16,
+  "maximum_reuse_overload": 1.1102230246251565e-15,
+  "graph_sha256": {
+    "Abilene.graphml": "8cd694280d98b336bb9b51fc3b2129a514f1b1b1ac80f2022aca02a57ef1e371",
+    "Cernet.graphml": "7cc1f09b8887604641c2ce5b1f54a16faf1fe64928b76e0ff95ed99564c327a0",
+    "Cogentco.graphml": "fca525c7484c1044feb09add79fec0861d4b234622e5d07b7d202470ad0a09ca",
+    "Colt.graphml": "e20cd0f5ecf0279d3308b90fa6749c41563d8463e45ba13f19460289f94946c5",
+    "Geant2012.graphml": "8487b2fb091d53f1317035162df0d8ef436c9e1d10727e26865b0ecd89d4786e",
+    "UsCarrier.graphml": "8fbb72f0ee93a08f062a8be1844c393e232ca4e59185254694651a026b2254ee"
+  },
+  "graph_sha256_and_git_blob_hashes_match_manifest": true,
+  "scope": "float64 consistency checks, not interval arithmetic or an independent novelty review"
+}

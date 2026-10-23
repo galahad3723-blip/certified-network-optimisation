@@ -1,0 +1,21 @@
+{
+  "description": "Source headers and execution-status wording were revised after the benchmark. Numerical operations, constants, protocol and saved observations are unchanged.",
+  "comparison_excludes": [
+    "module docstrings",
+    "string descriptions under dictionary key status"
+  ],
+  "files": {
+    "certified_num.py": {
+      "executed_sha256": "ee9d48596ab8a43c5f872f05832d30e55b7218fcf621132d41440cc6091b35da",
+      "current_sha256": "fd6a3a0e6610fb380666f5653732d9a3e0d3b9166ac1e82621b274b1755a30af",
+      "numerical_ast_sha256": "f1dd0abeccafcdf9c2593e3be511065d33d3627c3a8625a9ccd98caad1d6065c",
+      "numerical_ast_unchanged": true
+    },
+    "run_benchmark.py": {
+      "executed_sha256": "b8cad1da3c09bc5c23e6ec8476b0dce0bfe834e0b7204a60a0aeed73dddcb1ae",
+      "current_sha256": "c2ae2f6b2f7828475ffa3bb8d9102f0bc24acb3fb71c9a663b8ee79f1ada2cf0",
+      "numerical_ast_sha256": "a1a5f87ff93212eec578bfab9c827110f6be96c58e17352954d73f9c661a48aa",
+      "numerical_ast_unchanged": true
+    }
+  }
+}

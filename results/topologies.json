@@ -1,0 +1,68 @@
+{
+  "Abilene": {
+    "name": "Abilene",
+    "raw_nodes": 11,
+    "raw_edges": 14,
+    "used_nodes": 11,
+    "simple_undirected_edges": 14,
+    "components": 1,
+    "self_loops_removed": 0,
+    "removed_nodes": 0,
+    "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+  },
+  "Geant2012": {
+    "name": "Geant2012",
+    "raw_nodes": 40,
+    "raw_edges": 61,
+    "used_nodes": 40,
+    "simple_undirected_edges": 61,
+    "components": 1,
+    "self_loops_removed": 0,
+    "removed_nodes": 0,
+    "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+  },
+  "Cernet": {
+    "name": "Cernet",
+    "raw_nodes": 41,
+    "raw_edges": 59,
+    "used_nodes": 41,
+    "simple_undirected_edges": 58,
+    "components": 1,
+    "self_loops_removed": 0,
+    "removed_nodes": 0,
+    "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+  },
+  "Colt": {
+    "name": "Colt",
+    "raw_nodes": 153,
+    "raw_edges": 191,
+    "used_nodes": 153,
+    "simple_undirected_edges": 177,
+    "components": 1,
+    "self_loops_removed": 0,
+    "removed_nodes": 0,
+    "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+  },
+  "UsCarrier": {
+    "name": "UsCarrier",
+    "raw_nodes": 158,
+    "raw_edges": 189,
+    "used_nodes": 158,
+    "simple_undirected_edges": 189,
+    "components": 1,
+    "self_loops_removed": 0,
+    "removed_nodes": 0,
+    "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+  },
+  "Cogentco": {
+    "name": "Cogentco",
+    "raw_nodes": 197,
+    "raw_edges": 245,
+    "used_nodes": 197,
+    "simple_undirected_edges": 243,
+    "components": 1,
+    "self_loops_removed": 0,
+    "removed_nodes": 0,
+    "preprocessing": "undirected simple graph; largest component; deterministic shortest paths"
+  }
+}

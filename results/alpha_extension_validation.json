@@ -1,0 +1,345 @@
+{
+  "passed": true,
+  "alpha_values": [
+    0.2,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "independent_ray_cases": 150,
+  "sharpness_cases": 45,
+  "maximum_relative_ray_error": 7.105427357601002e-15,
+  "maximum_sharpness_equality_error": 3.5258254649228604e-16,
+  "maximum_variance_violation": 0.0,
+  "continuity_checks": [
+    {
+      "alpha": 0.999999,
+      "bound": 0.000614958296861742,
+      "log_bound": 0.0006149590811550532
+    },
+    {
+      "alpha": 1.000001,
+      "bound": 0.0006149598654487402,
+      "log_bound": 0.0006149590811550532
+    }
+  ],
+  "sharpness_checks": [
+    {
+      "alpha": 0.2,
+      "flows": 2,
+      "scale": 0.6,
+      "regret_per_M": 3.1892269300809665e-05,
+      "sharp_bound": 3.189226930076089e-05
+    },
+    {
+      "alpha": 0.2,
+      "flows": 2,
+      "scale": 0.8,
+      "regret_per_M": 6.4159404788878095e-06,
+      "sharp_bound": 6.415940478812082e-06
+    },
+    {
+      "alpha": 0.2,
+      "flows": 2,
+      "scale": 0.95,
+      "regret_per_M": 3.4844316888354676e-07,
+      "sharp_bound": 3.484431687064346e-07
+    },
+    {
+      "alpha": 0.2,
+      "flows": 5,
+      "scale": 0.6,
+      "regret_per_M": 9.606915095285919e-05,
+      "sharp_bound": 9.60691509528655e-05
+    },
+    {
+      "alpha": 0.2,
+      "flows": 5,
+      "scale": 0.8,
+      "regret_per_M": 1.838524235375404e-05,
+      "sharp_bound": 1.838524235377864e-05
+    },
+    {
+      "alpha": 0.2,
+      "flows": 5,
+      "scale": 0.95,
+      "regret_per_M": 9.720913616770399e-07,
+      "sharp_bound": 9.72091361720398e-07
+    },
+    {
+      "alpha": 0.2,
+      "flows": 40,
+      "scale": 0.6,
+      "regret_per_M": 0.00016784011539258572,
+      "sharp_bound": 0.00016784011539247579
+    },
+    {
+      "alpha": 0.2,
+      "flows": 40,
+      "scale": 0.8,
+      "regret_per_M": 3.2382445836921956e-05,
+      "sharp_bound": 3.2382445836857954e-05
+    },
+    {
+      "alpha": 0.2,
+      "flows": 40,
+      "scale": 0.95,
+      "regret_per_M": 1.7196682392199434e-06,
+      "sharp_bound": 1.7196682391886625e-06
+    },
+    {
+      "alpha": 0.5,
+      "flows": 2,
+      "scale": 0.6,
+      "regret_per_M": 8.816636006910017e-05,
+      "sharp_bound": 8.81663600691418e-05
+    },
+    {
+      "alpha": 0.5,
+      "flows": 2,
+      "scale": 0.8,
+      "regret_per_M": 1.54927579983724e-05,
+      "sharp_bound": 1.5492757998392115e-05
+    },
+    {
+      "alpha": 0.5,
+      "flows": 2,
+      "scale": 0.95,
+      "regret_per_M": 7.779864688892252e-07,
+      "sharp_bound": 7.779864689694271e-07
+    },
+    {
+      "alpha": 0.5,
+      "flows": 5,
+      "scale": 0.6,
+      "regret_per_M": 0.0007818367328453608,
+      "sharp_bound": 0.0007818367328453202
+    },
+    {
+      "alpha": 0.5,
+      "flows": 5,
+      "scale": 0.8,
+      "regret_per_M": 0.00014212078458420457,
+      "sharp_bound": 0.000142120784584282
+    },
+    {
+      "alpha": 0.5,
+      "flows": 5,
+      "scale": 0.95,
+      "regret_per_M": 7.267066692046215e-06,
+      "sharp_bound": 7.267066692129287e-06
+    },
+    {
+      "alpha": 0.5,
+      "flows": 40,
+      "scale": 0.6,
+      "regret_per_M": 0.0005026533591276382,
+      "sharp_bound": 0.0005026533591275806
+    },
+    {
+      "alpha": 0.5,
+      "flows": 40,
+      "scale": 0.8,
+      "regret_per_M": 9.146314424369123e-05,
+      "sharp_bound": 9.146314424365865e-05
+    },
+    {
+      "alpha": 0.5,
+      "flows": 40,
+      "scale": 0.95,
+      "regret_per_M": 4.678857161048107e-06,
+      "sharp_bound": 4.678857161113936e-06
+    },
+    {
+      "alpha": 1.0,
+      "flows": 2,
+      "scale": 0.6,
+      "regret_per_M": 0.0028349638012542164,
+      "sharp_bound": 0.0028349638012543643
+    },
+    {
+      "alpha": 1.0,
+      "flows": 2,
+      "scale": 0.8,
+      "regret_per_M": 0.0004659513271204194,
+      "sharp_bound": 0.00046595132712037857
+    },
+    {
+      "alpha": 1.0,
+      "flows": 2,
+      "scale": 0.95,
+      "regret_per_M": 2.2353450530438966e-05,
+      "sharp_bound": 2.2353450530400443e-05
+    },
+    {
+      "alpha": 1.0,
+      "flows": 5,
+      "scale": 0.6,
+      "regret_per_M": 0.0005803700678389392,
+      "sharp_bound": 0.0005803700678389534
+    },
+    {
+      "alpha": 1.0,
+      "flows": 5,
+      "scale": 0.8,
+      "regret_per_M": 9.494848070933643e-05,
+      "sharp_bound": 9.494848070923378e-05
+    },
+    {
+      "alpha": 1.0,
+      "flows": 5,
+      "scale": 0.95,
+      "regret_per_M": 4.541318502570303e-06,
+      "sharp_bound": 4.541318502526703e-06
+    },
+    {
+      "alpha": 1.0,
+      "flows": 40,
+      "scale": 0.6,
+      "regret_per_M": 0.0013719699793322126,
+      "sharp_bound": 0.0013719699793323104
+    },
+    {
+      "alpha": 1.0,
+      "flows": 40,
+      "scale": 0.8,
+      "regret_per_M": 0.00022370180770838114,
+      "sharp_bound": 0.00022370180770839299
+    },
+    {
+      "alpha": 1.0,
+      "flows": 40,
+      "scale": 0.95,
+      "regret_per_M": 1.0684981607031334e-05,
+      "sharp_bound": 1.0684981607035626e-05
+    },
+    {
+      "alpha": 2.0,
+      "flows": 2,
+      "scale": 0.6,
+      "regret_per_M": 0.00020827554280447382,
+      "sharp_bound": 0.00020827554280444804
+    },
+    {
+      "alpha": 2.0,
+      "flows": 2,
+      "scale": 0.8,
+      "regret_per_M": 2.981463604608702e-05,
+      "sharp_bound": 2.981463604598278e-05
+    },
+    {
+      "alpha": 2.0,
+      "flows": 2,
+      "scale": 0.95,
+      "regret_per_M": 1.3011266098623532e-06,
+      "sharp_bound": 1.3011266099816066e-06
+    },
+    {
+      "alpha": 2.0,
+      "flows": 5,
+      "scale": 0.6,
+      "regret_per_M": 0.003036117901291585,
+      "sharp_bound": 0.0030361179012917128
+    },
+    {
+      "alpha": 2.0,
+      "flows": 5,
+      "scale": 0.8,
+      "regret_per_M": 0.0004187412550713068,
+      "sharp_bound": 0.0004187412550713254
+    },
+    {
+      "alpha": 2.0,
+      "flows": 5,
+      "scale": 0.95,
+      "regret_per_M": 1.7920967922111508e-05,
+      "sharp_bound": 1.7920967922080422e-05
+    },
+    {
+      "alpha": 2.0,
+      "flows": 40,
+      "scale": 0.6,
+      "regret_per_M": 0.0036062243523471067,
+      "sharp_bound": 0.003606224352346754
+    },
+    {
+      "alpha": 2.0,
+      "flows": 40,
+      "scale": 0.8,
+      "regret_per_M": 0.0004695901409438252,
+      "sharp_bound": 0.0004695901409437764
+    },
+    {
+      "alpha": 2.0,
+      "flows": 40,
+      "scale": 0.95,
+      "regret_per_M": 1.949888589867005e-05,
+      "sharp_bound": 1.9498885898652785e-05
+    },
+    {
+      "alpha": 4.0,
+      "flows": 2,
+      "scale": 0.6,
+      "regret_per_M": 0.04999122169506592,
+      "sharp_bound": 0.0499912216950659
+    },
+    {
+      "alpha": 4.0,
+      "flows": 2,
+      "scale": 0.8,
+      "regret_per_M": 0.004254827069149701,
+      "sharp_bound": 0.004254827069149851
+    },
+    {
+      "alpha": 4.0,
+      "flows": 2,
+      "scale": 0.95,
+      "regret_per_M": 0.00013563947909452412,
+      "sharp_bound": 0.00013563947909461804
+    },
+    {
+      "alpha": 4.0,
+      "flows": 5,
+      "scale": 0.6,
+      "regret_per_M": 0.0060578424303751825,
+      "sharp_bound": 0.006057842430375142
+    },
+    {
+      "alpha": 4.0,
+      "flows": 5,
+      "scale": 0.8,
+      "regret_per_M": 0.0005661765442353505,
+      "sharp_bound": 0.0005661765442354824
+    },
+    {
+      "alpha": 4.0,
+      "flows": 5,
+      "scale": 0.95,
+      "regret_per_M": 1.89084045165072e-05,
+      "sharp_bound": 1.8908404516409145e-05
+    },
+    {
+      "alpha": 4.0,
+      "flows": 40,
+      "scale": 0.6,
+      "regret_per_M": 0.014432134086408024,
+      "sharp_bound": 0.014432134086408274
+    },
+    {
+      "alpha": 4.0,
+      "flows": 40,
+      "scale": 0.8,
+      "regret_per_M": 0.0012222684297817025,
+      "sharp_bound": 0.001222268429781681
+    },
+    {
+      "alpha": 4.0,
+      "flows": 40,
+      "scale": 0.95,
+      "regret_per_M": 3.877541513653291e-05,
+      "sharp_bound": 3.8775415136545664e-05
+    }
+  ],
+  "scope": "theoretical and small numerical supplement; large benchmark is log utility only"
+}

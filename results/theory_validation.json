@@ -1,0 +1,94 @@
+{
+  "ray_trials": 150,
+  "max_ray_objective_relative_error": 3.785311830025729e-16,
+  "minimum_weak_duality_margin": 58.349395489233565,
+  "max_dual_directional_gradient_error": 4.893557090657197e-07,
+  "sharp_single_link_checks": [
+    {
+      "d": 2,
+      "s": 0.6,
+      "regret_per_weight": 0.005301842530441028,
+      "jensen_bound": 0.0053018425304410255,
+      "variance_bound": 0.007352559724764236
+    },
+    {
+      "d": 2,
+      "s": 0.8,
+      "regret_per_weight": 0.0009074019948748293,
+      "jensen_bound": 0.0009074019948747125,
+      "variance_bound": 0.0010339537112949695
+    },
+    {
+      "d": 2,
+      "s": 0.95,
+      "regret_per_weight": 4.454299108216794e-05,
+      "jensen_bound": 4.4542991082086036e-05,
+      "variance_bound": 4.582620327069129e-05
+    },
+    {
+      "d": 5,
+      "s": 0.6,
+      "regret_per_weight": 0.003527311583723784,
+      "jensen_bound": 0.003527311583723547,
+      "variance_bound": 0.00497747304656862
+    },
+    {
+      "d": 5,
+      "s": 0.8,
+      "regret_per_weight": 0.0006100735942195905,
+      "jensen_bound": 0.0006100735942197455,
+      "variance_bound": 0.0006999571471737116
+    },
+    {
+      "d": 5,
+      "s": 0.95,
+      "regret_per_weight": 3.0109638734345796e-05,
+      "jensen_bound": 3.0109638734419908e-05,
+      "variance_bound": 3.1023031453682585e-05
+    },
+    {
+      "d": 40,
+      "s": 0.6,
+      "regret_per_weight": 0.002306726515890884,
+      "jensen_bound": 0.0023067265158909223,
+      "variance_bound": 0.0032974300892463383
+    },
+    {
+      "d": 40,
+      "s": 0.8,
+      "regret_per_weight": 0.00040209824873449745,
+      "jensen_bound": 0.00040209824873455036,
+      "variance_bound": 0.00046370110630026596
+    },
+    {
+      "d": 40,
+      "s": 0.95,
+      "regret_per_weight": 1.9924806734233433e-05,
+      "jensen_bound": 1.9924806734482325e-05,
+      "variance_bound": 2.055184958671544e-05
+    }
+  ],
+  "optimal_but_uncertified_counterexamples": [
+    {
+      "small_capacity_ratio": 0.5,
+      "actual_regret": 0.0,
+      "certificate_per_weight": 0.05889151782819173
+    },
+    {
+      "small_capacity_ratio": 0.1,
+      "actual_regret": 0.0,
+      "certificate_per_weight": 0.5534555457414024
+    },
+    {
+      "small_capacity_ratio": 0.01,
+      "actual_regret": 0.0,
+      "certificate_per_weight": 1.6193882432872684
+    },
+    {
+      "small_capacity_ratio": 1e-05,
+      "actual_regret": 0.0,
+      "certificate_per_weight": 5.063325551875169
+    }
+  ],
+  "interpretation": "Numerical validation supplements the written proofs, not novelty or interval-arithmetic certification."
+}

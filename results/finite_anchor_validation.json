@@ -1,0 +1,48 @@
+{
+  "cases": 500,
+  "zero_nominal_rate_cases": 250,
+  "capacity_expansions": 163,
+  "capacity_contractions": 337,
+  "maximum_formula_identity_error": 1.4432899320127035e-15,
+  "maximum_true_ray_excess_over_bound": 1.1102230246251565e-15,
+  "maximum_violation_of_variance_upper_bound": 0.0,
+  "maximum_KL_identity_error": 1.3322676295501878e-15,
+  "first_five_cases": [
+    {
+      "trial": 0,
+      "scale": 0.28936767999200286,
+      "bound": 0.6260067804416536,
+      "ray_gap": 0.6260067804416531,
+      "slack_term": 0.3130370587583516
+    },
+    {
+      "trial": 1,
+      "scale": 0.28736659979086426,
+      "bound": 0.3377579819098142,
+      "ray_gap": 0.27445195591598553,
+      "slack_term": 0.30506183492906236
+    },
+    {
+      "trial": 2,
+      "scale": 0.21366763918009316,
+      "bound": 0.4622173706446069,
+      "ray_gap": 0.4216817512324795,
+      "slack_term": 0.4721747681358716
+    },
+    {
+      "trial": 3,
+      "scale": 0.20862999153136183,
+      "bound": 0.5529630349888911,
+      "ray_gap": 0.4803081504824205,
+      "slack_term": 0.18444844579681083
+    },
+    {
+      "trial": 4,
+      "scale": 0.19490270896134435,
+      "bound": 0.5989660201612625,
+      "ray_gap": 0.46175844294082885,
+      "slack_term": 0.2017441286923023
+    }
+  ],
+  "passed": true
+}

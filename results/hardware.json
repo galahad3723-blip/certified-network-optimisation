@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-22T12:25:23Z",
+  "processor_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "architecture": "x86_64",
+  "logical_cpus_reported": 9,
+  "allowed_logical_cpus": 9,
+  "cgroup": {
+    "cpu.max": "800000 100000",
+    "memory.max": "8589934592"
+  },
+  "scope": "Metadata from the completion session; original pre-resume hardware was not recorded. No dedicated CPU or stable host-frequency claim."
+}

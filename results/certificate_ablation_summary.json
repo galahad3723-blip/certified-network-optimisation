@@ -1,0 +1,44 @@
+{
+  "core_cases": 576,
+  "scope": "untimed controlled certificate ablation; no benchmark retuning",
+  "acceptances_at_0.001": {
+    "fixed_anchor": 0,
+    "fixed_best": 0,
+    "ray_anchor": 216,
+    "ray_best": 216
+  },
+  "by_shock": [
+    {
+      "shock": "heterogeneous_30",
+      "cases": 144,
+      "fixed_anchor": 0,
+      "fixed_best": 0,
+      "ray_anchor": 0,
+      "ray_best": 0
+    },
+    {
+      "shock": "local_30",
+      "cases": 144,
+      "fixed_anchor": 0,
+      "fixed_best": 0,
+      "ray_anchor": 0,
+      "ray_best": 0
+    },
+    {
+      "shock": "uniform_10",
+      "cases": 144,
+      "fixed_anchor": 0,
+      "fixed_best": 0,
+      "ray_anchor": 144,
+      "ray_best": 144
+    },
+    {
+      "shock": "uniform_30",
+      "cases": 144,
+      "fixed_anchor": 0,
+      "fixed_best": 0,
+      "ray_anchor": 72,
+      "ray_best": 72
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "resume_date_utc": "2026-10-22T11:59:12Z",
+  "reason": "Previous execution ended after 154 complete anchors; remaining two scaling anchors resumed.",
+  "original_benchmark_sha256": "b8cad1da3c09bc5c23e6ec8476b0dce0bfe834e0b7204a60a0aeed73dddcb1ae",
+  "resume_driver_sha256": "79ceb0700ac6c21c092f45b23a22a2df1e34daee73d1430159aecf56934b13ed",
+  "executed_instrumented_driver_sha256": "45b2ac43abe8cf30fae9628bd1f945360435fbf431a19767a3dd3f8e684810e7",
+  "checkpoint_sha256": {
+    "anchors.csv": "a308c2888afe32187a5e15a6ce47c0882c35dce42d07299f4fee2328f706c34f",
+    "cases.csv": "ce09f89dc1df18e085cbcc45d39a7a9048cc5ecaa3b26b839a9c50b16c1a6f7e",
+    "runs.csv": "80660eff473253a9f6b77ba592ad3197c97f27d9257c79ec8e1236f5ca1d7daa",
+    "failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "protocol.json": "3026ebfed5a6930365f213b24fba3eacb952c0513f86328342a30190f22fdb65"
+  },
+  "timing_scope": "Original within-case repetitions retained; resumed cases measured in a later process. Original full wall time unavailable."
+}
