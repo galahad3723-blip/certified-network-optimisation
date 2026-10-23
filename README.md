@@ -82,6 +82,5 @@ Topology data retain their upstream CC BY 4.0 attribution and licence in
 are under `dis_extension/data_external/`. Third-party data licences do not
 automatically license the original project code.
 
-Author: Kai Chi. The paper is dated 15 October 2026; repository release metadata
-records the actual public release date. Numerical execution records retain
+Author: Kai Chi. The paper carries no date; repository release metadata records the actual public release date. Numerical execution records retain
 their original chronology and source hashes.
